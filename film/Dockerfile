@@ -1,6 +1,6 @@
 FROM node:latest
 WORKDIR /app
-COPY film/package.json .
+COPY /package.json .
 RUN npm install
 COPY . .
 RUN npm run build
