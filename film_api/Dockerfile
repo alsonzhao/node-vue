@@ -1,11 +1,7 @@
 FROM node:latest
-
 RUN mkdir -p /home/www/express
 WORKDIR /home/www/express
-
 COPY . /home/www/express
-
 RUN npm install
-
 EXPOSE 3000
 CMD ["npm", "run","start"]
